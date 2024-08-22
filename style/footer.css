@@ -1,6 +1,8 @@
+
+
 .footer {
-    background-color: rgb(43, 43, 43);
-    padding: 200px;
+    background-color: rgb(255, 255, 255);
+    padding-top: 100px;
 }
 
 .footer-link {
@@ -8,16 +10,16 @@
 }
 
 
-.logo2 img {
+
+.logo1 img {
     width: 150px;
 }
 
 #footer_content {
-    background-color: rgb(255, 255, 255);
-    background-color: var(--color-neutral-10);
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 3rem 3.5rem;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+ 
 }
 
 #footer_contacts h1 {
@@ -53,22 +55,31 @@
     opacity: 0.8;
 }
 
-.footer-list {
 
+.footer-list{
     color: white;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
-    gap: 0.75rem;
+    gap: 10px;
     list-style: none;
 }
 
-.footer-list .footer-link {
-    color: var(--color-neutral-30);
-    transition: all 0.4s;
+.footer-list2 {
+    color: white;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    list-style: none;
 }
 
 .footer-list .footer-link:hover {
-    color: #a70101;
+    color: #7c8ef5;
+}
+
+.footer-list2 .footer-link:hover {
+    color: #7c8ef5;
 }
 
 #footer_subscribe {
@@ -93,14 +104,15 @@
     all: unset;
     padding: 0.75rem;
     width: 100%;
+    color: black;
 
 }
 
 #input_group button {
-    background-color: #fd0000;
+    background-color: #818080;
     border: none;
     color: white;
-    padding: 0px 1.25rem;
+    padding: 0 20px;
     font-size: 1.125rem;
     height: 100%;
     border-radius: 0px 4px 4px 0px;
@@ -115,12 +127,33 @@
 #footer_copyright {
     display: flex;
     justify-content: center;
+    color: white;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;
-}
 
-#footer_copyright a {
-    color: #ffffff; /* Escolha a cor que preferir */
-    text-decoration: none; /* Remove a sublinhado */
+}
+@media (max-width: 768px) {
+
+} 
+
+@media screen and (max-width:480px){
+    #footer_content {
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+     
+    }
+    .footer-list{
+        
+        align-items: center;
+    }
+    .footer-list2{
+        
+        align-items: center;
+    }
+    
+.logo1{
+    margin: 0 auto;
+}
 }

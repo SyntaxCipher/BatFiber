@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    max-width: 1536px;
+    margin: auto;
+}
+
+.conteudoGrid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(1fr);
+}
+
+.tituloMoveis {
+    color: #EBEBEB;
+    position: relative;
+    top: 250px;
+    left:150px ;
+    
+}
+
+.conteudoGrid2 {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 2fr;
+}
+.titulo1{
+    color: #EBEBEB;
+    position: relative;
+    top: 280px;
+    left: 10px;
+}
+
+.titulo2{
+    color: #EBEBEB;
+    position: relative;
+    bottom: 70px;
+    left: 10px;
+
+}
+
+.conteudoGrid2 img {
+    width:295px;
+}
+
+.conteudoProduto2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+#containerIcons {
+    padding: 100px;
+    text-align: center;
+}
+
+.textIcon {
+    margin-top: 8px;
+}
+
+.red {
+    color: red;
+    text-align: center;
+}
+
+.outlet {
+    padding: 60px;
+    background-color: #EBEBEB;
+
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.tituloProduto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.conteudoProduto {
+    text-align: center;
+}
+
+
+.botaoWpp {
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-radius: 20px 20px;
+    padding: 5px;
+}
+
+.botaoWpp img {
+    vertical-align: middle;
+    padding: 5px;
+
+}
+
+.produtos {
+    padding: 60px;
+    
+
+}
